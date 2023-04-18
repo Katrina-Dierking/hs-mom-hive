@@ -1,0 +1,80 @@
+@mixin navDisplay {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    
+}
+
+@mixin images {
+    height: 28px;
+    width: 28px;
+}
+
+@mixin aDisplay {
+    text-decoration: none;
+    color:white;
+}
+
+.topNav {
+    @include navDisplay();
+    top:0;
+    width: 100vw;
+    height: 10vh;
+    background-color: navy;
+
+    .leftTop{
+        width: 40%;
+    }
+    .rightTop {
+        width: 20%;
+        background-color: white;
+        padding: 1%;
+    }
+
+    .midTop {
+        width: 40%;
+    } 
+}
+
+.midTop, .rightTop {
+    @include navDisplay();
+   
+    a {
+        @include aDisplay();
+    }
+}
+
+img, .icons{
+    @include images();
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 20%;
+}
+.search {
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -153px;
+    margin-top: 3%;
+    box-shadow:none;
+}
+
+.search-button img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}

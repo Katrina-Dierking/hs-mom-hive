@@ -1,0 +1,136 @@
+@mixin display {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin displayCol {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+@mixin aDecor{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    padding: 2% 0;
+}
+
+@mixin hover {
+    color:red;
+    font-weight:bold;
+}
+
+.dashCont {
+    height: 100vh;
+    top:0;
+}
+
+.dashboard {
+
+    @include display();
+    padding:2%;
+    border-bottom:2px solid black;
+    background-color: lightgrey;
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .buttons{
+        width: 20vw;
+        margin: auto 0;
+        
+    }
+    
+    .logout{
+        width: 35%;
+        background-color: lightgreen;
+        box-shadow: 3px 3px 4px slategrey;
+        color:black;
+        font-size: 12px;
+        border-radius: 5px;
+        border:0;
+        margin-right: 2%;
+        border: 1px solid black;
+    }
+
+}
+
+.mom,  .beeAnim{
+    display:none;
+}
+
+    
+
+.topDash {
+    @include display();
+    justify-content: space-around;
+    margin-top: 2%;
+
+    .profile {
+        width: 15vw;
+        border-right: 1px solid black;
+        padding-right: 1%;
+       
+       ul{ @include displayCol();
+
+            a { 
+                @include aDecor();
+            }
+        }
+
+        .icon {
+            width: 30px;
+            height:30px;
+            padding-right: 5%;
+            margin-top: 1%;
+            @include hover();
+        }
+
+        .iconName {
+          @include display();
+            width: 100%;
+        }
+
+    }
+    
+    .feed {
+        width: 60%;
+        padding-right: 1%;
+        // @include displayCol();
+        text-align: left;
+        
+        div {
+            @include displayCol();
+            
+            h3, p {
+                text-align: left;
+            }
+        }
+    }
+    
+    .rightDash {
+        width: 10vw;
+        border-left: 1px solid black;
+        ul {
+            
+            @include displayCol();
+            
+            
+            a {
+                @include aDecor();
+                
+            }
+        }
+    }
+}
+.logout:hover, 
+.profile ul a:hover, 
+.rightDash ul a:hover 
+    {
+        @include hover();
+    }

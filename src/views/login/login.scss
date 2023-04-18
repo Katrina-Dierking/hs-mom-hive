@@ -1,0 +1,41 @@
+@import '../../assets/styling/mixins';
+@import '../../assets/styling/variables';
+
+.loginContainer {
+	@include displayCol();
+	@include boxShadow();
+	color: $primary;
+	align-items: center;
+	height: 60vh;
+	max-width: 80%;
+	font-family: 'Jost', sans-serif;
+	background-color: $background;
+
+}
+
+*{
+    text-align: center;
+}
+.container{
+	background-color: $secondaryBckgrd;
+	padding: 5%;
+	border-radius:10px;
+	width: 50%;
+	@include buttonBox();
+}
+.input_space{
+    margin-bottom: 10px;
+}
+input{
+    height: 30px;
+    width: 100%;
+    font-size: 14px;
+}
+button{
+  	@include button();
+  	@include buttonBox();
+}
+
+button:hover {
+	@include hover();
+}
