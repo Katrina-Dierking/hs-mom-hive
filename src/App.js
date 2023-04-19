@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Dashboard from "./views/dashboard/Dashboard";
 // import About from "./views/about/About";
 import Home from "./views/home/Home";
+import Profile from "./views/profile/Profile";
 // import Account from "./components/account/Account";
 // import Resources from "./views/resources/Resources";
 // import Classes from "./views/classes/Classes";
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path = '/profile' element={<Profile />} />
           </Routes>
           </BrowserRouter>
           </section>

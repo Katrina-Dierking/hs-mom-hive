@@ -34,7 +34,9 @@ function Nav() {
         <img src={menu} className="icons" alt="menu" />
         <img src={messenger} className="icons" alt="messenger" />
         <img src={notifications} className="icons" alt="notifications" />
-        <img src={account} className="icons" alt="account" />
+        <Link to="/profile">
+          <img src={account} className="icons" alt="profile" />
+        </Link>
       </div>
     </section>
   );

@@ -1,0 +1,27 @@
+@import '../../../assets/styling/mixins';
+@import '../../../assets/styling/variables';
+
+
+.bodyModule {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary;
+    color:$secondaryBckgrd;
+
+    h1{
+        height: 5vh;
+    }
+}
+
+
+
+.bodyModule p{
+    border-top: 2px solid white;
+    width: 80vw;
+    height: 85vh;
+    padding-top: 3%;
+}

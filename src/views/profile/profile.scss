@@ -1,0 +1,11 @@
+
+.profile {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons {
+    display:flex;
+    width: 30vw;
+    justify-content: space-evenly;
+}

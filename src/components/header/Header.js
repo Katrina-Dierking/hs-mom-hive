@@ -1,9 +1,13 @@
 import React from 'react'
 import Nav from '../nav/Nav'
 
-function Header() {
+function Header({title}) {
+
   return (
-    <Nav />
+    <section className='header'>
+      <Nav />
+      <h1>{title}</h1>
+    </section>
   )
 }
 
