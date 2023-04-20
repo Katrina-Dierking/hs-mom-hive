@@ -2,7 +2,7 @@ import React from "react";
 
 import "./home.scss";
 import { Login } from "../login/Login";
-// import BodyMod from "../../modols/body/BodyMod";
+
 import Button from "../../modols/button/Button";
 
 function Home() {
