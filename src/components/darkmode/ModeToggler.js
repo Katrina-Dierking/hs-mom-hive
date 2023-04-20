@@ -35,11 +35,11 @@ function ModeToggler({children}) {
             <Moon />
         </label>
 
+        
+        </div>
         <Header />
         <main>{children}</main>
         <Footer />
-       
-    </div>
     </section>
   )
 }

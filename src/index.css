@@ -6,7 +6,7 @@
 }
 
 [data-theme="dark"] {
-  --body_background: #282c34;
+  --body_background: black;
   --body_color:white;
   --link_color: cyan;
 }
@@ -18,7 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black
+  /* background-color: black */
 }
 
 code {
