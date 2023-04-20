@@ -2,12 +2,12 @@ import React from "react";
 // import BodyMod from "../../modols/body/BodyMod";
 import Button from "../../modols/button/Button";
 import "./profile.scss";
-import ModeToggler from "../../components/darkmode/ModeToggler";
+import MainMod from "../../modols/main/MainMod";
 
 function Profile() {
   return (
     <section className="profile">
-    <ModeToggler />
+    <MainMod title = "all about you" />
     <div className="buttons">
     <Button title="Change Profile" />
     <Button title="Save Changes" />
@@ -17,4 +17,4 @@ function Profile() {
 }
 
 export default Profile;
-//   <BodyMod title="YOUR PROFILE" body="this is all about you" />
+

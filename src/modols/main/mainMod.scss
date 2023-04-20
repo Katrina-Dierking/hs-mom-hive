@@ -2,7 +2,7 @@
 @import '../../assets/styling/variables';
 
 
-.bodyModule {
+.mainModule {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,8 +19,8 @@
 
 
 
-.bodyModule p{
-    border-top: 2px solid white;
+.mainModule p{
+    border-top: 2px solid black;
     width: 80vw;
     height: 85vh;
     padding-top: 3%;

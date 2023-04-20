@@ -4,21 +4,29 @@ import "./home.scss";
 import { Login } from "../login/Login";
 
 import Button from "../../modols/button/Button";
+import MainMod from "../../modols/main/MainMod";
+import ModeToggler from "../../components/darkmode/ModeToggler";
+// import Layout from "../../components/layout/Layout";
 
 function Home() {
   return (
-    <section className="home">
-      <div className="top">
-      </div>
-      <div className="bottom">
-      <Button title="take me home" />
-      </div>
-      </section>
+   <ModeToggler>
+
+      <section className="home">
+        <div className="top">
+          <MainMod title="Home" body="this is where the body of home goes" />
+        </div>
+        <div className="bottom">
+        <Button title="take me home" />
+        </div>
+        </section>
+    
+
+    </ModeToggler>
       );
     }
     
     export default Home;
-    // <BodyMod title="Home" body="this is where the body of home goes" />
 // <div className='leftHome'>
 //     <h1>WELCOME</h1>
 //     <h3> to the MOM HIVE</h3>
