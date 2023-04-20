@@ -1,7 +1,7 @@
-import React from 'react'
-import BodyMod from '../../components/modules/Body/BodyMod'
-import Button from '../../components/modules/button/Button'
-import './profile.scss'
+import React from "react";
+import BodyMod from "../../modols/body/BodyMod";
+import Button from "../../modols/button/Button";
+import "./profile.scss";
 
 function Profile() {
   return (
@@ -15,4 +15,4 @@ function Profile() {
   );
 }
 
-export default Profile
+export default Profile;
