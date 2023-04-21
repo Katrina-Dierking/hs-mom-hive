@@ -14,9 +14,9 @@ function Home() {
         <div className="top">
           <MainMod title="HOME" 
           
-          body="this is where the body of home goes.
+          top="this is where the body of home goes.
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae minima, commodi vitae tempore temporibus dolorum quod fugiat, omnis eligendi voluptates, dolores similique eum numquam est eos perspiciatis laudantium quo vero.
-
+          
           what is going on?"
             />
         </div>
