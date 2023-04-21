@@ -10,7 +10,9 @@ function Profile() {
     <ModeToggler>
     
     <section className="profile">
-      <MainMod title = "all about you" />
+      <MainMod title = "ALL ABOUT YOU"
+      top="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sequi accusamus facere temporibus possimus delectus blanditiis assumenda saepe quisquam. Iusto explicabo dolores ullam corporis deserunt harum pariatur ex impedit consequuntur."
+       />
         <div className="buttons">
           <Button title="Change Profile" />
           <Button title="Save Changes" />

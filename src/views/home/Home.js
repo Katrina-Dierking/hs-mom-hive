@@ -1,12 +1,10 @@
 import React from "react";
 
 import "./home.scss";
-import { Login } from "../login/Login";
 
 import Button from "../../modols/button/Button";
 import MainMod from "../../modols/main/MainMod";
 import ModeToggler from "../../components/darkmode/ModeToggler";
-// import Layout from "../../components/layout/Layout";
 
 function Home() {
   return (
@@ -14,10 +12,16 @@ function Home() {
 
       <section className="home">
         <div className="top">
-          <MainMod title="Home" body="this is where the body of home goes" />
+          <MainMod title="HOME" 
+          
+          body="this is where the body of home goes.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae minima, commodi vitae tempore temporibus dolorum quod fugiat, omnis eligendi voluptates, dolores similique eum numquam est eos perspiciatis laudantium quo vero.
+
+          what is going on?"
+            />
         </div>
         <div className="bottom">
-        <Button title="take me home" />
+          <Button title="take me home" />
         </div>
         </section>
     

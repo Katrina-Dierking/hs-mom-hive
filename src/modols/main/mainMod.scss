@@ -7,13 +7,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
-    height:50vh;
+    width: 50vw;
+    margin-bottom: 1%;
+
+    // height:50vh;
     // background-color: $primary;
     // color:$secondaryBckgrd;
 
     h1{
-        height: 5vh;
+        height: 2vh;
+        font-size: 28px;
     }
 }
 
@@ -21,7 +24,6 @@
 
 .mainModule p{
     border-top: 2px solid black;
-    width: 80vw;
-    height: 85vh;
-    padding-top: 3%;
+    padding: 1% 0;
+    color:black;
 }

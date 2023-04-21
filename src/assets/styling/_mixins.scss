@@ -36,7 +36,8 @@
 }
 
 @mixin hover {
-    color:red;
+    background-color: grey;
+    color:black;
     font-weight:bold;
 }
 

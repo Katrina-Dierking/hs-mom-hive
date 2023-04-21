@@ -2,11 +2,11 @@
 .profile {
     display:flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 .buttons {
     display:flex;
     width: 30vw;
     justify-content: space-evenly;
-    background-color: red;
 }

@@ -1,5 +1,14 @@
+@import '../../assets/styling/mixins';
+@import '../../assets/styling/variables';
+
+.btn {
+    width: 50vw;
+}
 button {
-    background-color:blue;
-    color:white;
-    width: 10vw;
+   @include button();
+
+}
+
+button:hover {
+    @include hover();
 }
