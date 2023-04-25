@@ -1,0 +1,55 @@
+.playingDrums {
+	display: flex;
+	flex-direction: column;
+	padding:5px 0 150px 0;
+	align-items: center;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+.drums {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.drum {
+	background-color: yellow;
+    box-shadow: 5px 5px 15px lightgrey;
+	border-radius: 1rem;
+	width: 100px;
+	height: 100px;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.drum:hover {
+	opacity: 0.7;
+}
+
+.drum:active,
+.drum.playing {
+	transform: scale(1.1);
+}
+
+.drum .key {
+	color: black;
+	font-size: 3rem;
+}
+
+.drum .title{
+    font-weight: bold;
+}
+.drum .key:hover, .title:hover {
+    color:red;
+} 
+

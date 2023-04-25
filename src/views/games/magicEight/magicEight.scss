@@ -1,0 +1,85 @@
+
+.magicEight {
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question {
+    width: 50%;
+    height: 100%;
+    padding: 4%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.magicbut {
+    background-color: lightgrey;
+    color:white;
+    margin-top:-10%;
+    // border: none;
+    // width: 10vw; 
+    width:0;
+    height:0;
+    border-bottom:100px solid black;
+    border-left: 55px solid transparent;
+    border-right:55px solid transparent;
+    box-shadow:none;
+    border-radius:none;
+    border-top:none;
+    align-items: center;
+    padding:5%;
+    font-size:36px;
+}
+
+.circle {
+     border: 45px solid black;
+    margin-top:15%;
+     background-color: lightgrey;
+     display:flex;
+     flex-direction: column;
+     padding: 120px;
+     margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    
+}
+
+
+
+.circle:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  border:15px solid black;
+  padding:150px;
+
+
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
