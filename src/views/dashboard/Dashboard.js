@@ -11,6 +11,7 @@ import groups from '../../assets/images/community.png'
 import videos from '../../assets/images/video-camera.png'
 import events from '../../assets/images/calendar.png'
 import games from '../../assets/images/console.png'
+import ModeToggler from '../../components/darkmode/ModeToggler'
 
 
 
@@ -40,8 +41,7 @@ function Dashboard() {
           </button>
         </div>
       </section>
-      <Nav />
-
+      <ModeToggler>
       <section className="topDash">
         <aside className="profile">
           <ul>
@@ -62,7 +62,7 @@ function Dashboard() {
               <img src={groups} className="icon" alt="groups" />
             </Link>
             <Link to="/vides" className="iconName">
-              Saved Videos
+              Saved 
               <img src={videos} className="icon" alt="videos" />
             </Link>
             <Link to="/events" className="iconName">
@@ -85,7 +85,7 @@ function Dashboard() {
               debitis voluptates dolores aliquam cum itaque!
             </p>
           </div>
-
+ 
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -96,21 +96,13 @@ function Dashboard() {
             </p>
           </div>
         </section>
-
-        <aside className="rightDash">
-          <ul>
-            <a href="#">Text</a>
-            <a href="#">Text</a>
-            <a href="#">Text</a>
-            <a href="#">Text</a>
-            <a href="#">Text</a>
-            <a href="#">Text</a>
-            <a href="#">Text</a>
-          </ul>
-        </aside>
+ 
       </section>
-      <Footer />
+   
+   </ModeToggler>
     </section>
+     
+
   );
 }
 

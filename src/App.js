@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import About from "./views/about/About";
 import Home from "./views/home/Home";
 import Profile from "./views/profile/Profile";
+import Games from "./views/games/Games";
+import Classes from "./views/classes/Classes";
+import Dashboard from "./views/dashboard/Dashboard";
 // import Account from "./components/account/Account";
 // import Resources from "./views/resources/Resources";
 // import Classes from "./views/classes/Classes";
@@ -22,11 +25,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path = '/profile' element={<Profile />} />
-          </Routes>
-          </BrowserRouter>
-          </section>
-          );
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/classes" element={<Classes />} />
+        </Routes>
+      </BrowserRouter>
+    </section>
+  );
         }
         // <Route path="/about" element={<About />} />
         // <Route path="/account" element={<Account />} />

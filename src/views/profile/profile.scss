@@ -1,3 +1,5 @@
+@import '../../assets/styling/mixins';
+@import '../../assets/styling/variables';
 
 .profile {
     display:flex;
@@ -10,3 +12,18 @@
     width: 30vw;
     justify-content: space-evenly;
 }
+
+ .rightProfile{
+        width: 10vw;
+        border-left: 1px solid black;
+        ul {
+            
+            @include displayCol();
+            
+            
+            a {
+                @include aDecor();
+                
+            }
+        }
+    }

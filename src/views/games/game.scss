@@ -1,0 +1,35 @@
+.game {
+   
+    width: 50vw;
+
+}
+a {
+    text-decoration: none;
+    padding-left: 2%;
+    color:teal;
+
+}
+
+a:hover {
+    color:red;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+ul li img {
+
+    width: 30px;
+    margin-left: 2%;
+}
+
+li {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 1%;
+}
