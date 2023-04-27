@@ -1,3 +1,6 @@
+@import '../../assets/styling/mixins';
+@import '../../assets/styling/variables';
+
 @mixin navDisplay {
     display:flex;
     flex-direction:row;
@@ -21,7 +24,7 @@
     @include navDisplay();
     top:0;
     width: 100vw;
-    height: 10vh;
+    height: 14vh;
     background-color: navy;
 
     .leftTop{
@@ -77,4 +80,32 @@ img, .icons{
   width: 15px;
   height: 15px;
   object-fit: cover;
+}
+
+.rightTop {
+    border: 1px solid black;
+}
+.rightTop .title {
+    position:abolute;
+    color: $primary;
+    font-family: 'Bona Nova';
+    bottom: -30px; left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 14px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.rightTop .title::before {
+    content:"";
+    position:absolute;
+         top: 0; left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.rightTop img:hover + .title {
+                opacity: 1;
+                transform: translateX(-50%);
 }
