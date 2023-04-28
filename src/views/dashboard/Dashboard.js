@@ -12,6 +12,7 @@ import videos from '../../assets/images/video-camera.png'
 import events from '../../assets/images/calendar.png'
 import games from '../../assets/images/console.png'
 import ModeToggler from '../../components/darkmode/ModeToggler'
+import ToDo from '../../components/todos/ToDo'
 
 
 
@@ -76,6 +77,7 @@ function Dashboard() {
           </ul>
         </aside>
         <section className="feed">
+        <ToDo />
           <div>
             <h3>Today:</h3>
             <p>

@@ -3,7 +3,7 @@ import React from 'react'
 function ToDo() {
   return (
     <div className='todos'>
-        ToDo
+        Create your ToDo List for today:
     </div>
   )
 }
