@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Layout from "../../components/layout/Layout";
-
 import drum from '../../assets/images/drum.png'
 import eight from '../../assets/images/eight-ball.png'
 
