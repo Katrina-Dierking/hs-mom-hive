@@ -1,8 +1,8 @@
 import React from "react";
 // import BodyMod from "../../modols/body/BodyMod";
-import Button from "../../modols/button/Button";
+import Button from "../../modals/button/Button";
 import "./profile.scss";
-import MainMod from "../../modols/main/MainMod";
+import MainMod from "../../modals/main/MainMod";
 import ModeToggler from "../../components/darkmode/ModeToggler";
 
 function Profile() {

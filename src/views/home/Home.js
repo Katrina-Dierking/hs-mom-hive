@@ -2,8 +2,8 @@ import React from "react";
 
 import "./home.scss";
 
-import Button from "../../modols/button/Button";
-import MainMod from "../../modols/main/MainMod";
+import Button from "../../modals/button/Button";
+import MainMod from "../../modals/main/MainMod";
 import ModeToggler from "../../components/darkmode/ModeToggler";
 
 function Home() {
