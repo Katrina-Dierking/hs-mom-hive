@@ -10,6 +10,7 @@ import Classes from "./views/classes/Classes";
 import Dashboard from "./views/dashboard/Dashboard";
 import Shop from "./views/shop/Shop";
 import Resources from "./features/resources/Resources";
+import Drum from "./views/games/drums/Drum";
 // import Account from "./components/account/Account";
 // import Resources from "./views/resources/Resources";
 // import Classes from "./views/classes/Classes";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/playingdrums" element={<Drum />} />
 
         </Routes>
       </BrowserRouter>
