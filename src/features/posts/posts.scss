@@ -1,0 +1,20 @@
+.postForm {
+    border: 1px solid lightgrey;
+    padding: 2%;
+
+    form {
+        display:flex;
+        flex-direction:column;
+    }
+     
+    textarea {
+        margin-bottom: 5%;
+    }
+
+}
+
+article {
+    border: 1px solid grey;
+    margin-bottom: 2%;
+    padding: 2%;
+}

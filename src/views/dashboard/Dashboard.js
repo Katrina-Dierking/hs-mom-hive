@@ -79,9 +79,9 @@ function Dashboard() {
           </ul>
         </aside>
         <section className="feed">
-        <ToDo />
-         <PostsList />
-         <AddPostForm />
+          <ToDo />
+          <PostsList />
+          <AddPostForm />
         </section>
  
       </section>

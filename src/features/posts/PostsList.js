@@ -13,8 +13,8 @@ const PostsList = () => {
         </article>
     ))
   return (
-    <section className='PostsList'>
-        <h2>POSTS</h2>
+    <section className='postsList'>
+        <h2>FEED:</h2>
         {renderedPosts}
     </section>
   )

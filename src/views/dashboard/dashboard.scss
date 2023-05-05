@@ -69,6 +69,8 @@
 .topDash {
     @include display();
     justify-content: space-around;
+    align-items: start;
+    width: 100vw;
     margin-top: 2%;
 
     .profile {
@@ -101,6 +103,7 @@
     .feed {
         width: 60%;
         padding-right: 1%;
+        padding-bottom: 10%;
         // @include displayCol();
         text-align: left;
         
