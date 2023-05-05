@@ -1,38 +1,30 @@
 
-import axios from 'axios'
-import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
+// import axios from 'axios'
+import {createSlice} from '@reduxjs/toolkit'
 
-const initialState = {
-    loading: false, 
-    users: [], 
-    error: ''
-}
+const initialState = 
+  [
+      {id: 1, name: 'Katrina Dierking'}, 
+      {id: 2, name: 'Bobbi Wampler'},
+      {id: 3, name: 'Ashley King'} 
+  ]
 
-export const fetchUsers = createAsyncThunk('user/fetchUsers', () => {
-  return axios
-    .get ('')
-    .then(res => res.data)
-})
+
+
+// add users to API then use fetchUsers
+
+// export const fetchUsers = createAsyncThunk('user/fetchUsers', () => {
+//   return axios
+//     .get ('')
+//     .then(res => res.data)
+// })
 
 
 const userSlice = createSlice({
-  name:'user',
+  name:'users',
   initialState, 
-  extraReducers: builder => {
-    builder.addCase(fetchUsers.pending, state => {
-      state.loading = true
-    })
-    builder.addCase(fetchUsers.fulfilled, (state, action) => {
-      state.loading = false
-      state.users = action.payload
-      state.error = ''
-    })
-    builder.addCase(fetchUsers.rejected, (state, action) => {
-      state.loading= false
-      state.users = []
-      state.error = action.error.message
-    })
-  }
+  reducers: {}
 })
 
+export const selectAllUsers = (state) => state.users;
 export default userSlice.reducer

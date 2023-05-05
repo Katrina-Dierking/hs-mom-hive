@@ -13,6 +13,8 @@ import events from '../../assets/images/calendar.png'
 import games from '../../assets/images/console.png'
 import ModeToggler from '../../components/darkmode/ModeToggler'
 import ToDo from '../../components/todos/ToDo'
+import PostsList from '../../features/posts/PostsList'
+import AddPostForm from '../../features/posts/AddPostForm'
 
 
 
@@ -78,25 +80,8 @@ function Dashboard() {
         </aside>
         <section className="feed">
         <ToDo />
-          <div>
-            <h3>Today:</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Adipisci, porro, unde culpa doloremque veritatis maiores
-              aspernatur ipsam ullam quibusdam nemo doloribus qui illo quis
-              debitis voluptates dolores aliquam cum itaque!
-            </p>
-          </div>
- 
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Laboriosam, quibusdam architecto accusamus reprehenderit
-              reiciendis delectus tenetur alias, eligendi obcaecati, ab amet
-              velit ut accusantium vero ullam voluptas doloremque. Amet,
-              similique.
-            </p>
-          </div>
+         <PostsList />
+         <AddPostForm />
         </section>
  
       </section>
