@@ -31,16 +31,26 @@ function Nav() {
       </div>
 
       <div className="rightTop">
-        <img src={menu} className="icons" alt="menu" />
+        <Link to="/menu">
+          <img src={menu} className="icons" alt="menu" />
+          <Link to="/menu" className='title'>Menu</Link>
+        </Link>
+       
         <Link to="/messenger">
           <img src={messenger} className="icons" alt="messenger" />
-        
+          <Link to='/messenger' className='title'>Messenger</Link>
         </Link>
-        <img src={notifications} className="icons" alt="notifications" />
+
+        <Link to="/notifications">
+          <img src={notifications} className="icons" alt="notifications" />
+          <Link to ="notifications" className='title'>Notifications</Link>
+        </Link>
+
         <Link to="/profile">
           <img src={account} className="icons" alt="profile" />
           <Link to="/profile" className="title">Profile</Link>
         </Link>
+
       </div>
     </section>
   );
