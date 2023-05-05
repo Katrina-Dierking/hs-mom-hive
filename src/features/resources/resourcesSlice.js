@@ -13,9 +13,15 @@ const resourcesSlice = createSlice({
         }, 
         restocked: (state, action) => {
             state.numOfResources += action.payload
+        }, 
+        reset: (state) => {
+            state.numOfResources= 0; 
+        }, 
+        incrementByAmount: (state, action) => {
+            state.numOfResources += action.payload;
         }
     }
 })
 
 export default resourcesSlice.reducer
-export const { ordered, restocked} = resourcesSlice.actions
+export const { ordered, restocked, reset, incrementByAmount} = resourcesSlice.actions
