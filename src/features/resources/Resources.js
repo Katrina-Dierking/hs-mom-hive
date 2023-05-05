@@ -6,6 +6,7 @@ import {
   reset, 
   incrementByAmount
 } from './resourcesSlice'
+import './resources.scss'
 
 
 
@@ -23,19 +24,20 @@ const Resources = () => {
  }
 
   return (
-    <section>
+    <section className='resources'>
       <h2>Number of Resources - {numOfResources}</h2>
       <div>
         <button onClick={() => dispatch(ordered())}>Order Resource</button>
         <button onClick={() => dispatch(restocked(2))}>Restock Resource</button>
       </div>
+      
+      <div>
       <input
         type="text"
+        placeholder='Add amount'
         value={incrementAmount}
         onChange={(e) => setIncrementAmount(e.target.value)}
       />
-
-      <div>
         <button onClick={() => dispatch(incrementByAmount(addValue))}>
           Add amount
         </button>
