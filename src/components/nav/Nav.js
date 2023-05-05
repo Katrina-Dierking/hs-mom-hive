@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './nav.scss'
-import magnifer from '../../assets/images/magnifier.png'
 import menu from '../../assets/images/dots-menu.png'
 import messenger from '../../assets/images/messenger.png'
 import notifications from '../../assets/images/notification.png'
