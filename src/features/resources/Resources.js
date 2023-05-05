@@ -7,6 +7,7 @@ import {
   incrementByAmount
 } from './resourcesSlice'
 import './resources.scss'
+import ModeToggler from '../../components/darkmode/ModeToggler'
 
 
 
@@ -24,6 +25,8 @@ const Resources = () => {
  }
 
   return (
+    <ModeToggler title="RESOURCES">
+    
     <section className='resources'>
       <h2>Number of Resources - {numOfResources}</h2>
       <div>
@@ -44,6 +47,7 @@ const Resources = () => {
         <button onClick={resetAll}> Reset</button>
       </div>
     </section>
+    </ModeToggler>
   );
 }
 

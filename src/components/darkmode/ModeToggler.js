@@ -5,7 +5,7 @@ import './darkmode.scss'
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 
-function ModeToggler({children}) {
+function ModeToggler({children, title}) {
 
     const setDarkMode = ()=> {
         document.querySelector("body").setAttribute('data-theme', 'dark')
@@ -38,6 +38,7 @@ function ModeToggler({children}) {
         
         </div>
         <Header />
+        <h2>{title}</h2>
         <main>{children}</main>
         <Footer />
     </section>

@@ -17,9 +17,7 @@ function Nav() {
           name="search"
           placeholder="Search Mom Hive"
         />
-        <button type="submit" className="search-button">
-          <img src={magnifer} alt="magnifer" />
-        </button>
+      
       </form>
 
       <div className="midTop">

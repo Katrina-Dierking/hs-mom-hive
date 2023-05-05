@@ -83,7 +83,7 @@ img, .icons{
 }
 
 .rightTop {
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 .rightTop .title {
     position:abolute;
@@ -107,5 +107,6 @@ img, .icons{
 
 .rightTop img:hover + .title {
                 opacity: 1;
-                transform: translateX(-50%);
+                transform: translateX(-30%);
 }
+
