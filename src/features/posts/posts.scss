@@ -18,3 +18,26 @@ article {
     margin-bottom: 2%;
     padding: 2%;
 }
+
+.postForm {
+    display:flex;
+    flex-direction:column;
+    background-color: whitesmoke;
+}
+
+.reactionContainer {
+    margin: 0 0.25em 0 0;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 1rem;
+
+    
+    .reactionButton {
+    background-color: transparent;
+    border:none;
+    width: 6%;
+    color:black;
+    margin-right: 1%;
+   
+    }
+}
