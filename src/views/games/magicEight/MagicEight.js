@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./magicEight.scss";
-import Layout from "../../../components/layout/Layout";
+import ModeToggler from "../../../components/darkmode/ModeToggler";
 
 function MagicEight() {
   const answers = [
@@ -27,25 +27,26 @@ function MagicEight() {
   };
 
   return (
-    <Layout>
-      <section className="magicEight">
-        <h2> MAGIC EIGHT BALL</h2>
-        <form className="magic" onSubmit={getAnswer}>
-          <div className="question">
-            <input
-              value={question}
-              placeholder={"Ask a yes/no question - letters only"}
-              pattern="/^[A-Za-z\_\-]*$/"
-              onChange={(e) => setQuestion(e.target.value)}
-            />
-            <div className="circle">
-              <p>{answer}</p>
-              <button className="magicbut" type="submit"></button>
-            </div>
-          </div>
-        </form>
-      </section>
-    </Layout>
+<ModeToggler title="MAGIC EIGHT BALL">
+
+<section className="magicEight">
+  <form className="magic" onSubmit={getAnswer}>
+    <div className="question">
+      <input
+        value={question}
+        placeholder={"Ask a yes/no question - letters only"}
+        pattern="/^[A-Za-z\_\-]*$/"
+        onChange={(e) => setQuestion(e.target.value)}
+      />
+      <div className="circle">
+        <p>{answer}</p>
+        <button className="magicbut" type="submit"></button>
+      </div>
+    </div>
+  </form>
+</section>
+</ModeToggler>
+
   );
 }
 

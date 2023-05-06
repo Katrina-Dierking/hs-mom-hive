@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Drum from "./Drum";
 import "./drum.scss";
-import Layout from "../../../components/layout/Layout";
 
 import boom from "./sounds/boom.wav";
 import clap from "./sounds/clap.wav";
@@ -12,6 +11,7 @@ import ride from "./sounds/ride.wav";
 import snare from "./sounds/snare.wav";
 import tink from "./sounds/tink.wav";
 import tom from "./sounds/tom.wav";
+import ModeToggler from "../../../components/darkmode/ModeToggler";
 
 function PlayingDrums() {
   const [sounds] = useState([
@@ -71,21 +71,23 @@ function PlayingDrums() {
     },
   ]);
   return (
-    <Layout>
-      <section className="playingDrums">
-        <h1>Become a rockstar drummer!</h1>
-        <div className="drums">
-          {sounds.map((sound, i) => (
-            <Drum
-              key={i}
-              letter={sound.key}
-              sound={sound.sound}
-              title={sound.title}
-            />
-          ))}
-        </div>
-      </section>
-    </Layout>
+    <ModeToggler>
+    
+    <section className="playingDrums">
+      <h1>Become a rockstar drummer!</h1>
+      <div className="drums">
+        {sounds.map((sound, i) => (
+          <Drum
+            key={i}
+            letter={sound.key}
+            sound={sound.sound}
+            title={sound.title}
+          />
+        ))}
+      </div>
+    </section>
+    </ModeToggler>
+
   );
 }
 

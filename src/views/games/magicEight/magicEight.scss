@@ -1,11 +1,11 @@
 
 .magicEight {
     width: 50vw;
-    height: 70vh;
+    // height: 100vh;
     margin: 0 auto;
     display:flex; 
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .question {
@@ -18,6 +18,11 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5%;
+
+    input {
+      width: 30vw;
+      margin-bottom: 2%;
+    }
 }
 .magicbut {
     background-color: lightgrey;
