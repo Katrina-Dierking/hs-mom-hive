@@ -20,7 +20,20 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
     - 👩 The ability to create a profile
     - 👩👩 The ability to add friends
     - 🔥 A dashboard with a social feed from members/friends
+    - 🔥 CRUD for posts
+
+### Projected Time Line: 
+        - first release: June 15, 2023
         
     
+
+## ❗❗❗FUTURE FEATURES: 
+
+    - marketplace to buy/sell homeschooling resources
+    - private routes to allow users to create a personal homeschooling page to share with family members (Without them having access to the site)
+    - virtual classrooms
+    - events section for homeschoolers to gather locally 
+    - organization section of dashboard to allow moms to keep track of attendance, classes, tests, etc in one place
+    - virtual Moms Night Out
 
 
