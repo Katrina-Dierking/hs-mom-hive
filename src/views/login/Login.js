@@ -2,7 +2,6 @@ import React, {useRef, useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import './login.scss'
 import Dashboard from '../dashboard/Dashboard'
-// import Bee from '../../assets/lotties/Bee'
 
 
 
