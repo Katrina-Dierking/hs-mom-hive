@@ -1,0 +1,7 @@
+export {default as user} from '../assets/images/user.png'
+export {default as friends} from '../assets/images/friends.png'
+export {default as bag} from '../assets/images/shopping-bag.png'
+export {default as groups} from '../assets/images/community.png'
+export {default as videos} from '../assets/images/video-camera.png'
+export {default as events} from '../assets/images/calendar.png'
+export {default as games} from '../assets/images/console.png'

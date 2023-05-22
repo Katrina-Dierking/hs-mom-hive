@@ -1,16 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './dashboard.scss'
-import Nav from '../../components/nav/Nav'
-import Footer from '../../components/footer/Footer'
+// import Nav from '../../components/nav/Nav'
+// import Footer from '../../components/footer/Footer'
 
-import user from '../../assets/images/user.png'
-import friends from '../../assets/images/friends.png'
-import bag from '../../assets/images/shopping-bag.png'
-import groups from '../../assets/images/community.png'
-import videos from '../../assets/images/video-camera.png'
-import events from '../../assets/images/calendar.png'
-import games from '../../assets/images/console.png'
+// import user from '../../assets/images/user.png'
+// import friends from '../../assets/images/friends.png'
+// import bag from '../../assets/images/shopping-bag.png'
+// import groups from '../../assets/images/community.png'
+// import videos from '../../assets/images/video-camera.png'
+// import events from '../../assets/images/calendar.png'
+// import games from '../../assets/images/console.png'
+
+import {
+  user, 
+  friends, 
+  bag, 
+  groups, 
+  videos, 
+  events, 
+  games,
+} from '../../assets/index'
 import ModeToggler from '../../components/darkmode/ModeToggler'
 import ToDo from '../../components/todos/ToDo'
 import PostsList from '../../features/posts/PostsList'
