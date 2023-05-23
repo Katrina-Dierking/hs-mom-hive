@@ -3,15 +3,27 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Dashboard from "./views/dashboard/Dashboard";
 // import About from "./views/about/About";
-import Home from "./views/home/Home";
-import Profile from "./views/profile/Profile";
-import Games from "./views/games/Games";
-import Classes from "./views/classes/Classes";
-import Dashboard from "./views/dashboard/Dashboard";
-import Shop from "./views/shop/Shop";
-import Resources from "./features/resources/Resources";
-import PlayingDrums from "./views/games/drums/PlayingDrums"
-import MagicEight from "./views/games/magicEight/MagicEight";
+// import Home from "./views/home/Home";
+// import Profile from "./views/profile/Profile";
+// import Games from "./views/games/Games";
+// import Classes from "./views/classes/Classes";
+// import Dashboard from "./views/dashboard/Dashboard";
+// import Shop from "./views/shop/Shop";
+// import Resources from "./features/resources/Resources";
+// import PlayingDrums from "./views/games/drums/PlayingDrums"
+// import MagicEight from "./views/games/magicEight/MagicEight";
+
+import {
+  Home,
+  Profile, 
+  Games,
+  Classes,
+  Dashboard,
+  Shop,
+  Resources,
+  PlayingDrums,
+  MagicEight
+} from './views/index'
 
 function App() {
   return (
