@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       
-      <p>Copyright © 2023 | Katrina Dierking | Queen Bean Design Cafe : The Mom Hive</p>
+      <p>Copyright © 2023 | Katrina Dierking: QBDC | Designed by: Queen Bean Design Cafe</p>
     </footer>
   );
 }
